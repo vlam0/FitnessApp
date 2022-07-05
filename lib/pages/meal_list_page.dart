@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../colors.dart';
 
-/// StartUp Page for Tonal Logo button to enter Home Page
+/// Meal List Page
 class MealListPage extends StatefulWidget {
   const MealListPage({Key? key}) : super(key: key);
 
@@ -13,14 +13,20 @@ class _MealListPageState extends State<MealListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        fit: StackFit.expand,
+      body: Column (
         children: [
-          Container(
-            decoration: BoxDecoration(color: darkBackground),
+          ListTile(
+            title: Text('Atkins'),
           ),
+          ListTile(
+            title: Text('Keto'),
+          ),
+          ListTile(
+            title: Text('Raw'),
+          )
         ],
       ),
+
     );
   }
 }
